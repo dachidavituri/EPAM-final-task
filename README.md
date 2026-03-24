@@ -1,4 +1,4 @@
-# WebDriverIO Automation Project – Negative & Edge Cases
+# WebDriverIO Automation Project – "Negative & Edge Cases"
 
 ## 📌 Project Description
 
