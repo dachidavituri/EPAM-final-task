@@ -1,0 +1,28 @@
+{
+  "name": "negative-edge-case",
+  "version": "1.0.0",
+  "description": "testing-final-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js",
+    "allure": "rimraf allure-report && npx allure generate allure-results -o allure-report",
+    "allure-open": "npx allure open allure-report"
+  },
+  "keywords": [],
+  "author": "Dachi",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.26.1",
+    "@wdio/cli": "^9.26.1",
+    "@wdio/local-runner": "^9.26.1",
+    "@wdio/logger": "^9.18.0",
+    "@wdio/mocha-framework": "^9.26.1",
+    "@wdio/spec-reporter": "^9.26.1",
+    "rimraf": "^6.1.3",
+    "wdio-chromedriver-service": "^8.1.1",
+    "wdio-edgedriver-service": "^3.0.3",
+    "wdio-geckodriver-service": "^5.0.2"
+  }
+}
