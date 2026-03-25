@@ -1,4 +1,4 @@
-import BasePage from "./base.page";
+const BasePage = require("./base.page");
 
 class InventoryPage extends BasePage {
   get addBackpackBtn() {
@@ -42,4 +42,4 @@ class InventoryPage extends BasePage {
   }
 }
 
-export default new InventoryPage();
+module.exports = new InventoryPage();

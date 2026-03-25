@@ -1,4 +1,4 @@
-export const config = {
+exports.config = {
   //
   // ====================
   // Runner Configuration
@@ -129,7 +129,15 @@ export const config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ["spec", ["allure", { outputDir: "allure-results" }]],
+  reporters: [
+    "spec",
+    [
+      "allure",
+      {
+        outputDir: "allure-results",
+      },
+    ],
+  ],
 
   outputDir: "./logs",
 

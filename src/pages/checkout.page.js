@@ -1,4 +1,4 @@
-import BasePage from "./base.page";
+const BasePage = require("./base.page");
 
 class CheckoutPage extends BasePage {
   get checkoutBtn() {
@@ -45,4 +45,4 @@ class CheckoutPage extends BasePage {
   }
 }
 
-export default new CheckoutPage();
+module.exports = new CheckoutPage();

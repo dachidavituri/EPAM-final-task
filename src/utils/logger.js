@@ -1,19 +1,14 @@
-import logger from "@wdio/logger";
-
+const logger = require("@wdio/logger").default;
 const log = logger("e2e");
 
-export function info(message) {
-  log.info(message);
-}
-
-export function debug(message) {
-  log.debug(message);
-}
-
-export function warn(message) {
-  log.warn(message);
-}
-
-export function error(message) {
-  log.error(message);
-}
+module.exports = {
+  info: (message) => {
+    console.log(`[INFO] ${message}`);
+    try {
+      log.info(message);
+    } catch (e) {}
+  },
+  debug: (message) => console.log(`[DEBUG] ${message}`),
+  warn: (message) => console.warn(`[WARN] ${message}`),
+  error: (message) => console.error(`[ERROR] ${message}`),
+};

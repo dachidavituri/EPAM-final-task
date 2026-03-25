@@ -32,4 +32,4 @@ class CheckoutBuilder {
   }
 }
 
-export default CheckoutBuilder;
+module.exports = CheckoutBuilder;

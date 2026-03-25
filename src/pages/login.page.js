@@ -1,4 +1,4 @@
-import BasePage from "./base.page";
+const BasePage = require("./base.page");
 
 class LoginPage extends BasePage {
   get usernameInput() {
@@ -26,4 +26,4 @@ class LoginPage extends BasePage {
   }
 }
 
-export default new LoginPage();
+module.exports = new LoginPage();

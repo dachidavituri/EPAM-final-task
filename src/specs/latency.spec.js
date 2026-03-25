@@ -1,7 +1,7 @@
-import LoginPage from "../pages/login.page.js";
-import InventoryPage from "../pages/inventory.page.js";
-import UserFactory from "../data/user.factory.js";
-import { info } from "../utils/logger.js";
+const LoginPage = require("../pages/login.page.js");
+const InventoryPage = require("../pages/inventory.page.js");
+const UserFactory = require("../data/user.factory.js");
+const { info } = require("../utils/logger.js");
 
 describe("UC-2: Handling Latency (Wait Strategies)", () => {
   beforeEach(async () => {
@@ -31,7 +31,6 @@ describe("UC-2: Handling Latency (Wait Strategies)", () => {
 
     info("Logging out");
     await InventoryPage.logout();
-
     await expect(browser).toHaveUrl("https://www.saucedemo.com/");
   });
 });

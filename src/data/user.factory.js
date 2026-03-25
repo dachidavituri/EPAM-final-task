@@ -28,4 +28,4 @@ class UserFactory {
   }
 }
 
-export default UserFactory;
+module.exports = UserFactory;

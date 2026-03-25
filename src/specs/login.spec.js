@@ -1,6 +1,6 @@
-import LoginPage from "../pages/login.page.js";
-import UserFactory from "../data/user.factory.js";
-import { info } from "../utils/logger.js";
+const LoginPage = require("../pages/login.page.js");
+const UserFactory = require("../data/user.factory.js");
+const { info } = require("../utils/logger.js");
 
 describe("Login Page", () => {
   beforeEach(async () => {

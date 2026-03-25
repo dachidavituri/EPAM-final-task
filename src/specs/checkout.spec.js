@@ -1,9 +1,9 @@
-import LoginPage from "../pages/login.page.js";
-import InventoryPage from "../pages/inventory.page.js";
-import CheckoutPage from "../pages/checkout.page.js";
-import UserFactory from "../data/user.factory.js";
-import CheckoutBuilder from "../data/checkout.builder.js";
-import { info } from "../utils/logger.js";
+const LoginPage = require("../pages/login.page.js");
+const InventoryPage = require("../pages/inventory.page.js");
+const CheckoutPage = require("../pages/checkout.page.js");
+const UserFactory = require("../data/user.factory.js");
+const CheckoutBuilder = require("../data/checkout.builder.js");
+const { info } = require("../utils/logger.js");
 
 describe("UC-1: Checkout Negative Case", () => {
   beforeEach(async () => {
